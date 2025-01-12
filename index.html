@@ -26,6 +26,19 @@
             width: 100%;
             height: auto;
         }
+	.text-overlay {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    text-align: center;
+	}
+
+	.text-overlay p {
+	    color: white;
+	    font-size: 24px;
+	    font-weight: bold;
+	}
     </style>
 </head>
 <body>
@@ -39,6 +52,9 @@
 			-->
 			<img src="images/image.jpg" alt="A pyramid-shaped mountain rises in the mist behind jungle brambles">
 		</picture>
+            <div class="text-overlay">
+            <p>The body remembers and the soul recalls that which the mind seeks to hide.</p>
+        </div>
     </div>
 </body>
 </html>
