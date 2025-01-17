@@ -1,65 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://unpkg.com/@sakun/system.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The soul holds that which the mind seeks to hide.</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #000;
-        }
+<title>The soul holds that which the mind seeks to hide.</title>
+<style>
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
-        .image-container {
-            position: relative;
-            width: 100%;
-            height: 100vh;
-            overflow: hidden;
-        }
+body {
+  background-image: url('https://ouropenspaces.org/images/image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-        .image-container img {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            height: auto;
-        }
-	.text-overlay {
-	    position: absolute;
-	    top: 50%;
-	    left: 50%;
-	    transform: translate(-50%, -50%);
-	    text-align: center;
-	}
+.text-box {
+  width: 80%;
+  max-width: 600px;
+  height: 400px;
+  background-color: rgba(76, 70, 56, 0.25);
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+  border: 10px rgba(160, 181, 210, 1);
+  z-index: 9999;
+}
 
-	.text-overlay p {
-	    color: white;
-	    font-size: 24px;
-	    font-weight: bold;
-	}
-    </style>
+.text-box::-webkit-scrollbar {
+  width: 10px;
+}
+
+.text-box::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.text-box::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+}
+</style>
 </head>
 <body>
-<body>
-    <div class="image-container">
-        <picture>
-            <img src="images/image.jpg" alt="A pyramid-shaped mountain rises in the mist behind jungle brambles">
-        </picture>
-        
-        <div class="window" style="width:30rem; z-index: 1000; position: relative;">
-            <div class="title-bar"> 
-                <button aria-label="Close" class="close"></button>
-                <h1 class="title"></h1>
-                <button aria-label="Resize" class="resize"></button>
-            </div>
-            <div class="separator"></div>
-            <div class="window-pane">
-                <p>We will open doors.</p>
-            </div>
-        </div>
-    </div>
+<div class="text-box">
+<h2>We will open doors.</h2>
+</div>
 </body>
 </html>
+
+
